@@ -3,9 +3,7 @@ package Iterator::RoundRobin;
 use strict;
 use warnings;
 
-use English '-no_match_vars';
-
-our $VERSION = '0.1';
+our $VERSION = '0.2';
 
 use overload
     'eq' => \&next,
@@ -130,7 +128,6 @@ object creation.
   my $iter = Iterator::RoundRobin->new( ... );
   $iter->{'track_completed'} = 0;
 
-  
 =head1 AUTHOR
 
 Nick Gerakines, C<< <nick at gerakines.net> >>

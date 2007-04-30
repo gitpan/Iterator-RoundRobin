@@ -11,6 +11,7 @@ WriteMakefile(
     PREREQ_PM => {
         'Test::More' => 0,
         'English' => 0,
+        'overload' => 0,
     },
     dist                => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean               => { FILES => 'Iterator-RoundRobin-*' },
